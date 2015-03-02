@@ -1,0 +1,34 @@
+/* svc.less */
+
+#page-footer{
+  background-color: @navbarBackground;
+  background-image: -webkit-gradient(linear, left 0%, left 100%, from(@navbarBackground), to(lighten(@navbarBackground,20%)));
+  background-image: -webkit-linear-gradient(top, @navbarBackground, 100%, lighten(@navbarBackground,20%), 0%);
+  background-image: -moz-linear-gradient(top, @navbarBackground 100%, lighten(@navbarBackground,20%) 0%);
+  background-image: linear-gradient(to bottom, @navbarBackground 100%, lighten(@navbarBackground,20%) 0%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=@navbarBackground, endColorstr=lighten(@navbarBackground,20%), GradientType=0);
+}
+
+
+
+#page-footer{
+  background-color: @navbarBackground;
+  background-image: -webkit-gradient(linear, left 0%, left 100%, from(@navbarBackground), to(lighten(@navbarBackground,20%)));
+  background-image: -webkit-linear-gradient(top, @navbarBackground, 100%, lighten(@navbarBackground,20%), 0%);
+  background-image: -moz-linear-gradient(top, @navbarBackground 100%, lighten(@navbarBackground,20%) 0%);
+  background-image: linear-gradient(to bottom, @navbarBackground 100%, lighten(@navbarBackground,20%) 0%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=@navbarBackground, endColorstr=lighten(@navbarBackground,20%), GradientType=0);
+}
+
+#svc-footer a, .logininfo a{
+  color: @navbarLinkColor;
+  text-decoration: none;
+  text-shadow: 0 1px 0 @navbarBackgroundHighlight;
+    &:hover,
+    &:focus {
+      color: @navbarLinkColorHover;
+    }  
+  
+}
