@@ -23,16 +23,16 @@
  * For full information about creating Moodle themes, see:
  * http://docs.moodle.org/dev/Themes_2.0
  *
- * @package    theme_bootstrap3_brum1975
+ * @package    theme_brum1975bootstrap3
  * @copyright  2013 Moodle, moodle.org
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die;
 
-$plugin->version   = 2014072301;
+$plugin->version   = 2014072301.2;
 $plugin->requires  = 2014050800;
-$plugin->component = 'theme_bootstrap3_brum1975';
+$plugin->component = 'theme_brum1975bootstrap3';
 $plugin->dependencies = array(
-    'theme_bootstrapbase'  => 2014050800,
+    'theme_bootstrap'  => 2014050800,
 );

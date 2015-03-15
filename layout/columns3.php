@@ -23,13 +23,13 @@
  * For full information about creating Moodle themes, see:
  * http://docs.moodle.org/dev/Themes_2.0
  *
- * @package   theme_bootstrap3_brum1975
+ * @package   theme_brum1975bootstrap3
  * @copyright 2013 Moodle, moodle.org
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 // Get the HTML for the settings bits.
-$html = theme_bootstrap3_brum1975_get_html_for_settings($OUTPUT, $PAGE);
+$html = theme_brum1975bootstrap3_get_html_for_settings($OUTPUT, $PAGE);
 
 if (right_to_left()) {
     $regionbsid = 'region-bs-main-and-post';

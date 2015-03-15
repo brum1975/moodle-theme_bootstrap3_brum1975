@@ -23,17 +23,17 @@
  * For full information about creating Moodle themes, see:
  * http://docs.moodle.org/dev/Themes_2.0
  *
- * @package   theme_bootstrap3_brum1975
+ * @package   theme_brum1975bootstrap3
  * @copyright 2013 Moodle, moodle.org
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
-$THEME->name = 'Brum1975 Bootstrap';
+$THEME->name = 'brum1975bootstrap3';
 
 /////////////////////////////////
 // The only thing you need to change in this file when copying it to
 // create a new theme is the name above. You also need to change the name
-// in version.php and lang/en/theme_bootstrap3_brum1975.php as well.
+// in version.php and lang/en/theme_brum1975bootstrap3.php as well.
 //////////////////////////////////
 //
 $THEME->doctype = 'html5';
@@ -48,7 +48,7 @@ $THEME->enable_dock = true;
 $THEME->editor_sheets = array();
 
 $THEME->rendererfactory = 'theme_overridden_renderer_factory';
-$THEME->csspostprocess = 'theme_bootstrap3_brum1975_process_css';
+$THEME->csspostprocess = 'theme_brum1975bootstrap3_process_css';
 
 $THEME->layouts = array(
     // Most backwards compatible layout without the blocks - this is the layout used by default.

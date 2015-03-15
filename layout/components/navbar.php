@@ -13,9 +13,9 @@
     <div id="moodle-navbar" class="navbar-collapse collapse">
         <?php echo $OUTPUT->custom_menu(); ?>
         <?php echo $OUTPUT->user_menu(); ?>
-        <ul class="nav pull-right">
+       <!-- <ul class="nav pull-right">
             <li><?php echo $OUTPUT->page_heading_menu(); ?></li>
-        </ul>
+        </ul> -->
     </div>
     </div>
 </nav>

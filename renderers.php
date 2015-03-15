@@ -17,7 +17,7 @@
 /**
  * Brum1975 theme with the underlying Bootstrap theme.
  *
- * @package    brum1975
+ * @package    theme_brum1975bootstrap3
  * @subpackage Bootstrap
  * @author     Matthew Cannings
  * @author     Based on code originally written by G J Bernard, Mary Evans, Bas Brands, Stuart Lamour and David Scotson.

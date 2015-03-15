@@ -23,7 +23,7 @@
  * For full information about creating Moodle themes, see:
  * http://docs.moodle.org/dev/Themes_2.0
  *
- * @package   theme_bootstrap3_brum1975
+ * @package   theme_brum1975bootstrap3
  * @copyright 2013 Moodle, moodle.org
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
@@ -74,11 +74,11 @@
     }
     return $regions;
 }
-function theme_bootstrap3_brum1975_process_css($css, $theme) {
+function theme_brum1975bootstrap3_process_css($css, $theme) {
 
     // Set the background image for the logo.
     $logo = $theme->setting_file_url('logo', 'logo');
-    $css = theme_bootstrap3_brum1975_set_logo($css, $logo);
+    $css = theme_brum1975bootstrap3_set_logo($css, $logo);
 
     // Set custom CSS.
     if (!empty($theme->settings->customcss)) {
@@ -86,8 +86,8 @@ function theme_bootstrap3_brum1975_process_css($css, $theme) {
     } else {
         $customcss = null;
     }
-    $css = theme_bootstrap3_brum1975_set_customcss($css, $customcss);
-    $css = theme_bootstrap3_brum1975_set_fontwww($css);
+    $css = theme_brum1975bootstrap3_set_customcss($css, $customcss);
+    $css = theme_brum1975bootstrap3_set_fontwww($css);
     return $css;
 }
 
@@ -98,7 +98,7 @@ function theme_bootstrap3_brum1975_process_css($css, $theme) {
  * @param string $logo The URL of the logo.
  * @return string The parsed CSS
  */
-function theme_bootstrap3_brum1975_set_logo($css, $logo) {
+function theme_brum1975bootstrap3_set_logo($css, $logo) {
     $tag = '[[setting:logo]]';
     $replacement = $logo;
     if (is_null($replacement)) {
@@ -122,7 +122,7 @@ function theme_bootstrap3_brum1975_set_logo($css, $logo) {
  * @param array $options
  * @return bool
  */
-function theme_bootstrap3_brum1975_pluginfile($course, $cm, $context, $filearea, $args, $forcedownload, array $options = array()) {
+function theme_brum1975bootstrap3_pluginfile($course, $cm, $context, $filearea, $args, $forcedownload, array $options = array()) {
     if ($context->contextlevel == CONTEXT_SYSTEM and $filearea === 'logo') {
         $theme = theme_config::load('bootstrap3_brum1975');
         return $theme->setting_file_serve('logo', $args, $forcedownload, $options);
@@ -138,7 +138,7 @@ function theme_bootstrap3_brum1975_pluginfile($course, $cm, $context, $filearea,
  * @param string $customcss The custom CSS to add.
  * @return string The CSS which now contains our custom CSS.
  */
-function theme_bootstrap3_brum1975_set_customcss($css, $customcss) {
+function theme_brum1975bootstrap3_set_customcss($css, $customcss) {
     $tag = '[[setting:customcss]]';
     $replacement = $customcss;
     if (is_null($replacement)) {
@@ -163,7 +163,7 @@ function theme_bootstrap3_brum1975_set_customcss($css, $customcss) {
  *      - heading HTML to use for the heading. A logo if one is selected or the default heading.
  *      - footnote HTML to use as a footnote. By default ''.
  */
-function theme_bootstrap3_brum1975_get_html_for_settings(renderer_base $output, moodle_page $page) {
+function theme_brum1975bootstrap3_get_html_for_settings(renderer_base $output, moodle_page $page) {
     global $CFG;
     $return = new stdClass;
 
@@ -187,7 +187,7 @@ function theme_bootstrap3_brum1975_get_html_for_settings(renderer_base $output, 
 }
 
 /**
- * All theme functions should start with theme_bootstrap3_brum1975_
+ * All theme functions should start with theme_brum1975bootstrap3_
  * @deprecated since 2.5.1
  */
 function bootstrap3_brum1975_process_css() {
@@ -195,7 +195,7 @@ function bootstrap3_brum1975_process_css() {
 }
 
 /**
- * All theme functions should start with theme_bootstrap3_brum1975_
+ * All theme functions should start with theme_brum1975bootstrap3_
  * @deprecated since 2.5.1
  */
 function bootstrap3_brum1975_set_logo() {
@@ -203,7 +203,7 @@ function bootstrap3_brum1975_set_logo() {
 }
 
 /**
- * All theme functions should start with theme_bootstrap3_brum1975_
+ * All theme functions should start with theme_brum1975bootstrap3_
  * @deprecated since 2.5.1
  */
 function bootstrap3_brum1975_set_customcss() {
@@ -213,7 +213,7 @@ function bootstrap3_brum1975_set_customcss() {
 /**
  * Include the Awesome Font.
  */
-function theme_bootstrap3_brum1975_set_fontwww($css) {
+function theme_brum1975bootstrap3_set_fontwww($css) {
     global $CFG, $PAGE;
     if(empty($CFG->themewww)){
         $themewww = $CFG->wwwroot."/theme";

@@ -21,7 +21,7 @@ $hassidepost = $PAGE->blocks->region_has_content('side-post', $OUTPUT);
 $knownregionpre = $PAGE->blocks->is_known_region('side-pre');
 $knownregionpost = $PAGE->blocks->is_known_region('side-post');
 
-$regions = bootstrap3_brum1975_bootstrap_grid($hassidepre, $hassidepost);
+$regions = brum1975_bootstrap_grid($hassidepre, $hassidepost);
 $PAGE->set_popup_notification_allowed(false);
 if ($knownregionpre || $knownregionpost) {
     theme_bootstrap_initialise_zoom($PAGE);
@@ -45,7 +45,6 @@ echo $OUTPUT->doctype() ?>
 
 <header class="moodleheader">
     <div class="container-fluid">
-    <a href="<?php echo $CFG->wwwroot ?>" class="logo"></a>
     <?php echo $OUTPUT->page_heading(); ?>
     </div>
 </header>

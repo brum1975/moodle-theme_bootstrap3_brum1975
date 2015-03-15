@@ -17,7 +17,7 @@
 /**
  * The embedded layout.
  *
- * @package   theme_bootstrap3_brum1975
+ * @package   theme_brum1975bootstrap3
  * @copyright 2013 Moodle, moodle.org
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */

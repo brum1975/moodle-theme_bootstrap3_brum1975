@@ -24,7 +24,7 @@
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
- class theme_bootstrap3_brum1975_core_renderer extends theme_bootstrap_core_renderer {
+ class theme_brum1975bootstrap3_core_renderer extends theme_bootstrap_core_renderer {
 
  	/*
      * This renders a notification message.
@@ -213,6 +213,9 @@
             $content .= html_writer::link($url, 'View All Courses');
             $content .= html_writer::end_tag('li');
         }
+        $content .= html_writer::end_tag('ul');
+        $content .= html_writer::end_tag('li');
+        $content .= html_writer::end_tag('ul');
         return $content;
     }
 
@@ -526,7 +529,7 @@
 
 include_once($CFG->dirroot . "/course/format/topics/renderer.php");
 
-class theme_bootstrap3_brum1975_format_topics_renderer extends format_topics_renderer {
+class theme_brum1975bootstrap3_format_topics_renderer extends format_topics_renderer {
     /*
     protected function get_nav_links($course, $sections, $sectionno) {
         // FIXME: This is really evil and should by using the navigation API.
@@ -549,7 +552,7 @@ class theme_bootstrap3_brum1975_format_topics_renderer extends format_topics_ren
                 $previouslink .= html_writer::end_tag('div');
                 $previouslink .= html_writer::start_tag('span', array('class' => 'text'));
                 $previouslink .= html_writer::start_tag('span', array('class' => 'nav_guide'));
-                $previouslink .= get_string('previoussection', 'theme_bootstrap3_brum1975');
+                $previouslink .= get_string('previoussection', 'theme_brum1975bootstrap3');
                 $previouslink .= html_writer::end_tag('span');
                 $previouslink .= html_writer::empty_tag('br');
                 $previouslink .= get_section_name($course, $sections[$back]);
@@ -571,7 +574,7 @@ class theme_bootstrap3_brum1975_format_topics_renderer extends format_topics_ren
                 $nextlink .= html_writer::end_tag('div');
                 $nextlink .= html_writer::start_tag('span', array('class' => 'text'));
                 $nextlink .= html_writer::start_tag('span', array('class' => 'nav_guide'));
-                $nextlink .= get_string('nextsection', 'theme_bootstrap3_brum1975');
+                $nextlink .= get_string('nextsection', 'theme_brum1975bootstrap3');
                 $nextlink .= html_writer::end_tag('span');
                 $nextlink .= html_writer::empty_tag('br');
                 $nextlink .= get_section_name($course, $sections[$forward]);
@@ -708,7 +711,7 @@ class theme_bootstrap3_brum1975_format_topics_renderer extends format_topics_ren
 
 include_once($CFG->dirroot . "/course/format/weeks/renderer.php");
 
-class theme_bootstrap3_brum1975_format_weeks_renderer extends format_weeks_renderer {
+class theme_brum1975bootstrap3_format_weeks_renderer extends format_weeks_renderer {
     /*
     protected function get_nav_links($course, $sections, $sectionno) {
         // FIXME: This is really evil and should by using the navigation API.
@@ -731,7 +734,7 @@ class theme_bootstrap3_brum1975_format_weeks_renderer extends format_weeks_rende
                 $previouslink .= html_writer::end_tag('div');
                 $previouslink .= html_writer::start_tag('span', array('class' => 'text'));
                 $previouslink .= html_writer::start_tag('span', array('class' => 'nav_guide'));
-                $previouslink .= get_string('previousweek', 'theme_bootstrap3_brum1975');
+                $previouslink .= get_string('previousweek', 'theme_brum1975bootstrap3');
                 $previouslink .= html_writer::end_tag('span');
                 $previouslink .= html_writer::empty_tag('br');
                 $previouslink .= get_section_name($course, $sections[$back]);
@@ -753,7 +756,7 @@ class theme_bootstrap3_brum1975_format_weeks_renderer extends format_weeks_rende
                 $nextlink .= html_writer::end_tag('div');
                 $nextlink .= html_writer::start_tag('span', array('class' => 'text'));
                 $nextlink .= html_writer::start_tag('span', array('class' => 'nav_guide'));
-                $nextlink .= get_string('nextweek', 'theme_bootstrap3_brum1975');
+                $nextlink .= get_string('nextweek', 'theme_brum1975bootstrap3');
                 $nextlink .= html_writer::end_tag('span');
                 $nextlink .= html_writer::empty_tag('br');
                 $nextlink .= get_section_name($course, $sections[$forward]);

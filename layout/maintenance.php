@@ -17,13 +17,13 @@
 /**
  * The maintenance layout.
  *
- * @package   theme_bootstrap3_brum1975
+ * @package   theme_brum1975bootstrap3
  * @copyright 2013 Moodle, moodle.org
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 // Get the HTML for the settings bits.
-$html = theme_bootstrap3_brum1975_get_html_for_settings($OUTPUT, $PAGE);
+$html = theme_brum1975bootstrap3_get_html_for_settings($OUTPUT, $PAGE);
 
 echo $OUTPUT->doctype() ?>
 <html <?php echo $OUTPUT->htmlattributes(); ?>>
